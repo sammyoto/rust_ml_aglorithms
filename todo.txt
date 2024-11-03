@@ -1,0 +1,10 @@
+Big Goals:
+1. Take CLI input for model-type and data-location
+2. Error check for model-types and valid data file
+3. Write data-structure for multi-dimensional data
+4. Be able to visualize data-structure
+
+Small Goal Checklist:
+1. Move get_cli_inputs to own file
+2. Write tests for get_cli_inputs
+3. Verify model type and data location are valid
