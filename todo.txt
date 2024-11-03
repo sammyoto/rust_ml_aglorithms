@@ -5,6 +5,5 @@ Big Goals:
 4. Be able to visualize data-structure
 
 Small Goal Checklist:
-1. Move get_cli_inputs to own file
-2. Write tests for get_cli_inputs
-3. Verify model type and data location are valid
+- Write tests for get_cli_inputs
+- Verify model type and data location are valid
