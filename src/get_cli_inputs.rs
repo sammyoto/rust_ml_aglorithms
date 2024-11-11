@@ -2,7 +2,7 @@ use std::io::stdin;
 use std::path::Path;
 
 pub fn get_cli_inputs(debug: bool) -> (String, String) {
-    // Get model type
+    // Set variables
     let mut model: String = String::new();
     let mut data_location: String = String::new();
 
@@ -11,6 +11,7 @@ pub fn get_cli_inputs(debug: bool) -> (String, String) {
         model = "lr".to_string();
         data_location = "src/test_data/test.csv".to_string();
     } else {
+        // Get model type
         println!("Enter model type: (lr, mlp)");
         stdin().read_line(&mut model).unwrap();
         // Get rid of newline

@@ -12,6 +12,7 @@ impl DataFrame {
     }
 
     pub fn load_data(&mut self, data_location: String) {
+        // Data vectors
         let mut columns: Vec<String> = Vec::new();
         let mut data: Vec<Vec<f32>> = Vec::new();
 
@@ -19,6 +20,7 @@ impl DataFrame {
         let file: Result<File, io::Error> = File::open(data_location);
         let reader = io::BufReader::new(file.unwrap());
 
+        // Write data into vectors
         let mut first_line: bool = true;
         for (_index, line) in reader.lines().enumerate() {
             let line = line.unwrap();
@@ -37,19 +39,30 @@ impl DataFrame {
                 data.push(row);
             }
         }
+
+        // Set self to retrieved data
         self.columns = columns;
         self.data = data;
     }
     
     pub fn print(&self) {
+        // Print column headers
         println!("Data:");
+        print!("{:<10}", "row_num");
         for col in &self.columns {
-            print!("{}", col);
+            print!("{:<10}", col);
         }
+        println!("");
+
+        // Print rows
+        let mut row_num = 0;
         for row in &self.data {
+            print!("{:<10}", row_num);
             for data in row {
-                print!("{}", data);
+                print!("{:<10}", data);
             }
+            row_num += 1;
+            print!("\n");
         }
         println!("\n");
     }

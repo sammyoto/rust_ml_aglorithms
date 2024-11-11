@@ -5,6 +5,5 @@ Big Goals:
 4. Be able to visualize data-structure
 
 Small Goal Checklist:
-- Make print method look good
 - Methods for accessing data
 - Write tests
