@@ -1,9 +1,9 @@
 Big Goals:
-1. Take CLI input for model-type and data-location
-2. Error check for model-types and valid data file
-3. Write data-structure for multi-dimensional data
-4. Be able to visualize data-structure
+1. Take CLI input for model-type and data-location DONE
+2. Error check for model-types and valid data file DONE
+3. Write data-structure for multi-dimensional data DONE
+4. Be able to visualize data-structure DONE
+5. Write linear regression model code DONE
 
 Small Goal Checklist:
-- Methods for accessing data
-- Write tests
+- Figure out why weights explode with certain data

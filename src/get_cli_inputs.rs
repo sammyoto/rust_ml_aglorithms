@@ -9,10 +9,10 @@ pub fn get_cli_inputs(debug: bool) -> (String, String) {
     // When debug don't take command line inputs
     if debug {
         model = "lr".to_string();
-        data_location = "src/test_data/test.csv".to_string();
+        data_location = "src/test_data/testing.csv".to_string();
     } else {
         // Get model type
-        println!("Enter model type: (lr, mlp)");
+        println!("Enter model type: (lr, mlp (unsupported))");
         stdin().read_line(&mut model).unwrap();
         // Get rid of newline
         model.pop();
