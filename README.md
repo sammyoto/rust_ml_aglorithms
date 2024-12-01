@@ -13,4 +13,5 @@ A small rust program machine learning written for learning rust.
 <ol>
 <li> Figure out why weights explode with some datasets </li>
 <li> Implement multilayer-perceptron algorithm (backpropogation) </li>
+<li> Explore rust parallelization and parallelize model training <li>
 </ol>
