@@ -14,7 +14,6 @@ fn main() {
     // load data
     let mut data: DataFrame = DataFrame::new();
     data.load_data(inputs.1.clone());
-    println!("Normal Data");
     data.print();
 
     // standardize
@@ -24,12 +23,13 @@ fn main() {
 
     // create model and train
     let mut lr_model = LinearRegressor::new();
-    lr_model.fit(data, 100, 0.001);
+    lr_model.fit(data, 20, 0.001);
 
     // validate model
     let mut test_data: DataFrame = DataFrame::new();
     test_data.load_data(inputs.1.clone());
 
+    println!("\nValidate with predictions:");
     for i in 0..5 {
         let prediction: f32 = lr_model.predict(test_data.get_row(i));
        println!("Predicted: {} Actual: {}", prediction, test_data.target[i]);

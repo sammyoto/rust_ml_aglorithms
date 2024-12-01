@@ -37,6 +37,7 @@ impl LinearRegressor {
         self.weights = vec![0.1;feature_len];
 
         // loop over data for every epoch
+        println!("Training Start:");
         for epoch in 0..epochs {
             let mut errors: Vec<f32> = Vec::new();
             for row in 0..data.data.len() {
