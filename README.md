@@ -1,17 +1,16 @@
-<h1>The Goal</h1>
-Learn rust by implementing basic machine learning algorithms.
+<h1>Summary</h1>
+A small rust program machine learning written for learning rust.
 
-<h1>Program MVP Criteria</h1>
+<h1>Program Current Capabilities:</h1>
 <ol>
-<li> Be able to read in CSV data </li>
-<li> Create a data structure to store multi-dimensional data </li>
-<li> Be able to visualize data </li>
-<li> Create ML models 
-    <ol>
-        <li> Linear Regression </li>
-        <li> Multi-layer Perceptron (backpropogation)</li>
-    </ol>
-</li>
+<li> Reads and stores CSV data </li>
+<li> Normalizes data</li>
+<li> Prints data </li>
+<li> Creates linear regression model and trains it successfully</li>
 </ol>
 
-<p> Write it in a rusty way!</p>
+<h1>Program Future Capabilities (If I get around to it):</h1>
+<ol>
+<li> Figure out why weights explode with some datasets </li>
+<li> Implement multilayer-perceptron algorithm (backpropogation) </li>
+</ol>
